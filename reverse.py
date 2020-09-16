@@ -5,15 +5,21 @@
 
 def reverse(ss):
     # Write code here
-    pass
+    if len(ss) == 0:
+        return ss
+    else:
+        return reverse(ss[1:]) + ss[0]
 
-# print(reverse("")) 
+
+print(reverse(str(input('reverse string: '))))
+
+# print(reverse(""))
 # => ""
-# print(reverse("a")) 
+# print(reverse("a"))
 # => "a"
-# print(reverse("ab")) 
+# print(reverse("ab"))
 # => "ba"
-# print(reverse("computer")) 
+# print(reverse("computer"))
 # => "retupmoc"
-# print(reverse(reverse("computer"))) 
+# print(reverse(reverse("computer")))
 # => "computer"
