@@ -6,9 +6,10 @@
 def reverse(ss):
     # Write code here
     if len(ss) == 0:
-        return ss
+        return ""
     else:
         return reverse(ss[1:]) + ss[0]
+        # return ss[-1] + reverse(ss[:-1])
 
 
 print(reverse(str(input('reverse string: '))))
