@@ -15,13 +15,23 @@ def fib(n):
     # else:
     #     return fib(n-1)+fib(n-2)
 
-    if n <= 0:
+    # if n <= 0:
+    #     return 0
+    # if n == 1 or n == 2:
+    #     return 1
+    # else:
+    #     return fib(n-1)+fib(n-2)
+
+    if n < 0:
         return 0
     if n == 1 or n == 2:
         return 1
     else:
-        return fib(n-1)+fib(n-2)
+        return fib(n - 1) + fib(n - 2)
 
+
+print(f"fibonacci of 9: {fib(9)} ")
+print(f"fibonacci of 13: {fib(13)} ")
 
 print(fib(int(input("Enter a Fib: "))))
 
